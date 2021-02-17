@@ -1,3 +1,9 @@
+ALTER TABLE "mvd_users" DROP CONSTRAINT proper_email;
+
+ALTER TABLE "mvd_users" DROP CONSTRAINT proper_phone;
+
+ALTER TABLE "lohs" DROP CONSTRAINT proper_passport;
+
 ALTER TABLE "mvd_users"
 ADD CONSTRAINT proper_email CHECK (email ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}+$');
 
