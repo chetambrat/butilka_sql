@@ -11,4 +11,4 @@ ALTER TABLE "mvd_users"
 ADD CONSTRAINT proper_phone CHECK (phone ~* '^+79[0-9]{9}$');
 
 ALTER TABLE "lohs"
-ADD CONSTRAINT proper_passport CHECK (passportSerialNumber ~* '^[0-9]{10}$');
+ADD CONSTRAINT proper_passport CHECK (lohs.passportSerialNumber ~* '^[0-9]{10}$');
